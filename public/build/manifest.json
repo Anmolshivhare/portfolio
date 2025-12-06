@@ -1,0 +1,248 @@
+{
+  "node_modules/.pnpm/@fortawesome+fontawesome-free@7.1.0/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2": {
+    "file": "assets/fa-brands-400-BfBXV7Mm.woff2",
+    "src": "node_modules/.pnpm/@fortawesome+fontawesome-free@7.1.0/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2"
+  },
+  "node_modules/.pnpm/@fortawesome+fontawesome-free@7.1.0/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2": {
+    "file": "assets/fa-regular-400-BVHPE7da.woff2",
+    "src": "node_modules/.pnpm/@fortawesome+fontawesome-free@7.1.0/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2"
+  },
+  "node_modules/.pnpm/@fortawesome+fontawesome-free@7.1.0/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2": {
+    "file": "assets/fa-solid-900-8GirhLYJ.woff2",
+    "src": "node_modules/.pnpm/@fortawesome+fontawesome-free@7.1.0/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/.pnpm/@fortawesome+fontawesome-free@7.1.0/node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2": {
+    "file": "assets/fa-v4compatibility-DnhYSyY-.woff2",
+    "src": "node_modules/.pnpm/@fortawesome+fontawesome-free@7.1.0/node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
+  },
+  "node_modules/.pnpm/bootstrap-icons@1.13.1/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff": {
+    "file": "assets/bootstrap-icons-BeopsB42.woff",
+    "src": "node_modules/.pnpm/bootstrap-icons@1.13.1/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff"
+  },
+  "node_modules/.pnpm/bootstrap-icons@1.13.1/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
+    "file": "assets/bootstrap-icons-mSm7cUeB.woff2",
+    "src": "node_modules/.pnpm/bootstrap-icons@1.13.1/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2"
+  },
+  "resources/images/1679308981-1679308981-9046e.webp": {
+    "file": "assets/1679308981-1679308981-9046e-CVJDIgab.webp",
+    "src": "resources/images/1679308981-1679308981-9046e.webp"
+  },
+  "resources/images/Haridwar.webp": {
+    "file": "assets/Haridwar--zwdxj4B.webp",
+    "src": "resources/images/Haridwar.webp"
+  },
+  "resources/images/IMG-20251112-WA0004.webp": {
+    "file": "assets/IMG-20251112-WA0004-Cg2sYWCQ.webp",
+    "src": "resources/images/IMG-20251112-WA0004.webp"
+  },
+  "resources/images/IMG_1449.webp": {
+    "file": "assets/IMG_1449-C4bh5n2M.webp",
+    "src": "resources/images/IMG_1449.webp"
+  },
+  "resources/images/IMG_1456.WEBP": {
+    "file": "assets/IMG_1456-BdODpA4j.WEBP",
+    "src": "resources/images/IMG_1456.WEBP"
+  },
+  "resources/images/IMG_1459.webp": {
+    "file": "assets/IMG_1459-BBWREfkf.webp",
+    "src": "resources/images/IMG_1459.webp"
+  },
+  "resources/images/IMG_1463.webp": {
+    "file": "assets/IMG_1463-sjaqFHqh.webp",
+    "src": "resources/images/IMG_1463.webp"
+  },
+  "resources/images/IMG_1465.webp": {
+    "file": "assets/IMG_1465-C6K50HUJ.webp",
+    "src": "resources/images/IMG_1465.webp"
+  },
+  "resources/images/IMG_1466.webp": {
+    "file": "assets/IMG_1466-ia23gVxF.webp",
+    "src": "resources/images/IMG_1466.webp"
+  },
+  "resources/images/Kasol.webp": {
+    "file": "assets/Kasol-BE5tBEih.webp",
+    "src": "resources/images/Kasol.webp"
+  },
+  "resources/images/Lonavala.webp": {
+    "file": "assets/Lonavala-J2w2O7qu.webp",
+    "src": "resources/images/Lonavala.webp"
+  },
+  "resources/images/Lonavala22.webp": {
+    "file": "assets/Lonavala22-BvHZFhzN.webp",
+    "src": "resources/images/Lonavala22.webp"
+  },
+  "resources/images/Manali.webp": {
+    "file": "assets/Manali-BIE82TCd.webp",
+    "src": "resources/images/Manali.webp"
+  },
+  "resources/images/Mask group.webp": {
+    "file": "assets/Mask group-DMgd4Xjl.webp",
+    "src": "resources/images/Mask group.webp"
+  },
+  "resources/images/Mask group1.webp": {
+    "file": "assets/Mask group1-B-Ca7DwE.webp",
+    "src": "resources/images/Mask group1.webp"
+  },
+  "resources/images/Mumbai.webp": {
+    "file": "assets/Mumbai-BvOoSJ9z.webp",
+    "src": "resources/images/Mumbai.webp"
+  },
+  "resources/images/Mussoorie.webp": {
+    "file": "assets/Mussoorie-DLZWrh22.webp",
+    "src": "resources/images/Mussoorie.webp"
+  },
+  "resources/images/Mussoorie2.webp": {
+    "file": "assets/Mussoorie2-tU25T79S.webp",
+    "src": "resources/images/Mussoorie2.webp"
+  },
+  "resources/images/Rishikesh.webp": {
+    "file": "assets/Rishikesh-QshqH3x1.webp",
+    "src": "resources/images/Rishikesh.webp"
+  },
+  "resources/images/Shimla.webp": {
+    "file": "assets/Shimla-DXg9Gi_Y.webp",
+    "src": "resources/images/Shimla.webp"
+  },
+  "resources/images/Uttarakhand.webp": {
+    "file": "assets/Uttarakhand-C8zRaVvQ.webp",
+    "src": "resources/images/Uttarakhand.webp"
+  },
+  "resources/images/Uttarakhandbanner.webp": {
+    "file": "assets/Uttarakhandbanner-DtdYbmI5.webp",
+    "src": "resources/images/Uttarakhandbanner.webp"
+  },
+  "resources/images/almora.webp": {
+    "file": "assets/almora-Dn6gg-sf.webp",
+    "src": "resources/images/almora.webp"
+  },
+  "resources/images/banner1.webp": {
+    "file": "assets/banner1-Da4dLKlU.webp",
+    "src": "resources/images/banner1.webp"
+  },
+  "resources/images/banner2.webp": {
+    "file": "assets/banner2-C2M907y1.webp",
+    "src": "resources/images/banner2.webp"
+  },
+  "resources/images/banner3.webp": {
+    "file": "assets/banner3-CM485exj.webp",
+    "src": "resources/images/banner3.webp"
+  },
+  "resources/images/banner4.webp": {
+    "file": "assets/banner4-Cj5KNNDE.webp",
+    "src": "resources/images/banner4.webp"
+  },
+  "resources/images/banner5.webp": {
+    "file": "assets/banner5-D-fYheLH.webp",
+    "src": "resources/images/banner5.webp"
+  },
+  "resources/images/banner6.webp": {
+    "file": "assets/banner6-CGmPLtux.webp",
+    "src": "resources/images/banner6.webp"
+  },
+  "resources/images/facts-bg.webp": {
+    "file": "assets/facts-bg-CJ9sggNe.webp",
+    "src": "resources/images/facts-bg.webp"
+  },
+  "resources/images/fav-icon.webp": {
+    "file": "assets/fav-icon-CxZ5yS3q.webp",
+    "src": "resources/images/fav-icon.webp"
+  },
+  "resources/images/footer_logo.svg": {
+    "file": "assets/footer_logo-DPnlv2CZ.svg",
+    "src": "resources/images/footer_logo.svg"
+  },
+  "resources/images/footer_logo1.svg": {
+    "file": "assets/footer_logo-DPnlv2CZ.svg",
+    "src": "resources/images/footer_logo.svg"
+  },
+  "resources/images/hidamba devi.webp": {
+    "file": "assets/hidamba devi-BcsCzFSm.webp",
+    "src": "resources/images/hidamba devi.webp"
+  },
+  "resources/images/himachal.webp": {
+    "file": "assets/himachal-CvfcQzhx.webp",
+    "src": "resources/images/himachal.webp"
+  },
+  "resources/images/jaipur-rajasthan.webp": {
+    "file": "assets/jaipur-rajasthan-C7kipjP3.webp",
+    "src": "resources/images/jaipur-rajasthan.webp"
+  },
+  "resources/images/jaisalmer.webp": {
+    "file": "assets/jaisalmer-LiRnLezG.webp",
+    "src": "resources/images/jaisalmer.webp"
+  },
+  "resources/images/khadala.webp": {
+    "file": "assets/khadala-Dzjpn3iR.webp",
+    "src": "resources/images/khadala.webp"
+  },
+  "resources/images/logo.svg": {
+    "file": "assets/logo-BSvtNX9i.svg",
+    "src": "resources/images/logo.svg"
+  },
+  "resources/images/me-100x100.webp": {
+    "file": "assets/me-100x100-C69NClhu.webp",
+    "src": "resources/images/me-100x100.webp"
+  },
+  "resources/images/mount-abu-hill-station-india-nak.webp": {
+    "file": "assets/mount-abu-hill-station-india-nak-Iz7REWcL.webp",
+    "src": "resources/images/mount-abu-hill-station-india-nak.webp"
+  },
+  "resources/images/pexels-photo-131729-700x466.webp": {
+    "file": "assets/pexels-photo-131729-700x466-DFjjQix7.webp",
+    "src": "resources/images/pexels-photo-131729-700x466.webp"
+  },
+  "resources/images/rajasthan.webp": {
+    "file": "assets/rajasthan-CMBMmnNz.webp",
+    "src": "resources/images/rajasthan.webp"
+  },
+  "resources/images/sanskar.webp": {
+    "file": "assets/sanskar-B8fDTWrz.webp",
+    "src": "resources/images/sanskar.webp"
+  },
+  "resources/images/udaipur-city-view-from-hotel-balcony-rajasthan-india.webp": {
+    "file": "assets/udaipur-city-view-from-hotel-balcony-rajasthan-india-cWXYAB1I.webp",
+    "src": "resources/images/udaipur-city-view-from-hotel-balcony-rajasthan-india.webp"
+  },
+  "resources/images/udaipur-city.webp": {
+    "file": "assets/udaipur-city-DUpZ_Ada.webp",
+    "src": "resources/images/udaipur-city.webp"
+  },
+  "resources/js/front/front.js": {
+    "file": "assets/front-BzX8HQ8v.js",
+    "name": "front",
+    "src": "resources/js/front/front.js",
+    "isEntry": true
+  },
+  "resources/scss/front/fonts/Mulish-SemiBold.ttf": {
+    "file": "assets/Mulish-SemiBold-DR2FFfPc.ttf",
+    "src": "resources/scss/front/fonts/Mulish-SemiBold.ttf"
+  },
+  "resources/scss/front/fonts/WorkSans-Bold.ttf": {
+    "file": "assets/WorkSans-Bold-vxqyxmNL.ttf",
+    "src": "resources/scss/front/fonts/WorkSans-Bold.ttf"
+  },
+  "resources/scss/front/fonts/WorkSans-Light.ttf": {
+    "file": "assets/WorkSans-Light-BfMVmBsb.ttf",
+    "src": "resources/scss/front/fonts/WorkSans-Light.ttf"
+  },
+  "resources/scss/front/fonts/WorkSans-Medium.ttf": {
+    "file": "assets/WorkSans-Medium-086MIOl0.ttf",
+    "src": "resources/scss/front/fonts/WorkSans-Medium.ttf"
+  },
+  "resources/scss/front/fonts/WorkSans-Regular.ttf": {
+    "file": "assets/WorkSans-Regular-D8Pgfzz-.ttf",
+    "src": "resources/scss/front/fonts/WorkSans-Regular.ttf"
+  },
+  "resources/scss/front/fonts/WorkSans-SemiBold.ttf": {
+    "file": "assets/WorkSans-SemiBold-ClLydlu_.ttf",
+    "src": "resources/scss/front/fonts/WorkSans-SemiBold.ttf"
+  },
+  "resources/scss/front/front.scss": {
+    "file": "assets/front-D6DW11l9.css",
+    "src": "resources/scss/front/front.scss",
+    "isEntry": true,
+    "names": [
+      "front.css"
+    ]
+  }
+}
