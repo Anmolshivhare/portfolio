@@ -61,11 +61,11 @@
                 <div class="floating-cards">
                     <div class="float-card card-1">
                         <i class="bi bi-code-slash"></i>
-                        <span>2+ Years</span>
+                        <span class="text-white">2+ Years</span>
                     </div>
                     <div class="float-card card-2">
                         <i class="bi bi-check-circle-fill"></i>
-                        <span>15+ Projects</span>
+                        <span class="text-white">15+ Projects</span>
                     </div>
                 </div>
             </div>

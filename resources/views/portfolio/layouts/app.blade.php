@@ -30,7 +30,7 @@
     <meta property="twitter:description"
         content="Experienced Laravel Developer specializing in PHP, MySQL, JavaScript & modern web applications.">
 
-    <link rel="icon" type="image/png" href="{{ Vite::asset('resources/images/portfolio/favicon.png') }}">
+    <link rel="icon" type="image/png" href="">
 
     <link rel="canonical" href="{{ url()->current() }}">
 

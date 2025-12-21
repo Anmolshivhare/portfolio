@@ -5,7 +5,7 @@
         </a>
 
         <div class="nav-menu" id="navMenu">
-            <ul class="nav-list">
+            <ul class="nav-list gap-5">
                 <li class="nav-item">
                     <a href="#home" class="nav-link active">Home</a>
                 </li>

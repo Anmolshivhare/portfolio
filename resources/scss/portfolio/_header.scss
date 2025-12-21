@@ -9,6 +9,9 @@
     z-index: $z-sticky;
     transition: all $transition-base;
 
+    // Default state - bottom shadow
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
     &.scrolled {
         @include glassmorphism(20px, 0.1);
 
@@ -19,6 +22,11 @@
         [data-theme="light"] & {
             background: rgba($light-bg, 0.9);
             box-shadow: $shadow-md;
+        }
+
+        // Change inactive nav links to white when scrolled
+        .nav-link:not(.active) {
+            color: #ffffff !important;
         }
     }
 }
@@ -105,11 +113,11 @@
     transition: color $transition-fast;
 
     [data-theme="dark"] & {
-        color: $dark-text-muted;
+        color: $dark-text;
 
         &:hover,
         &.active {
-            color: $dark-text;
+            color: $primary;
         }
     }
 
