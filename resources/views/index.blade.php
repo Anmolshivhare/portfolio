@@ -54,7 +54,7 @@
             <div class="hero-image" data-aos="zoom-in" data-aos-delay="200">
                 <div class="image-wrapper">
                     <div class="image-glow"></div>
-                    <img src="{{ Vite::asset('resources/images/portfolio/profile.png') }}" alt="Sumit Shivhare"
+                    <img src="{{ Vite::asset('resources/images/portfolio/profile.jpg') }}" alt="Sumit Shivhare"
                         class="profile-img">
                     <div class="image-ring"></div>
                 </div>

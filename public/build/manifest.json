@@ -43,6 +43,10 @@
     "file": "assets/footer_logo-DPnlv2CZ.svg",
     "src": "resources/images/footer_logo.svg"
   },
+  "resources/images/portfolio/about.jpg": {
+    "file": "assets/about-5HX2kaJj.jpg",
+    "src": "resources/images/portfolio/about.jpg"
+  },
   "resources/images/portfolio/about.png": {
     "file": "assets/about-CFjFTZlZ.png",
     "src": "resources/images/portfolio/about.png"
@@ -54,6 +58,10 @@
   "resources/images/portfolio/og-image.jpg": {
     "file": "assets/favicon-CxZ5yS3q.png",
     "src": "resources/images/fav-icon.webp"
+  },
+  "resources/images/portfolio/profile.jpg": {
+    "file": "assets/about-5HX2kaJj.jpg",
+    "src": "resources/images/portfolio/about.jpg"
   },
   "resources/images/portfolio/profile.png": {
     "file": "assets/profile-teF-dTrt.png",
