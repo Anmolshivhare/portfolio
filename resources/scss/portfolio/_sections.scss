@@ -1,0 +1,524 @@
+// About Section
+// ==============
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-10;
+    align-items: center;
+
+    @include lg {
+        grid-template-columns: 1fr 1.2fr;
+        gap: $spacing-16;
+    }
+}
+
+.about-image {
+    .image-container {
+        position: relative;
+        max-width: 400px;
+        margin: 0 auto;
+
+        img {
+            border-radius: $radius-2xl;
+            box-shadow: $shadow-xl;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 20px -20px -20px 20px;
+            border: 3px solid $primary;
+            border-radius: $radius-2xl;
+            z-index: -1;
+        }
+    }
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    padding: $spacing-4 $spacing-6;
+    background: $gradient-primary;
+    border-radius: $radius-xl;
+    text-align: center;
+    color: $dark-text;
+    box-shadow: $shadow-lg;
+
+    @include md {
+        bottom: 30px;
+        right: -40px;
+    }
+
+    .badge-number {
+        display: block;
+        font-size: $fs-3xl;
+        font-weight: $fw-bold;
+        line-height: 1;
+    }
+
+    .badge-text {
+        font-size: $fs-xs;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+
+.about-info {
+    text-align: center;
+
+    @include lg {
+        text-align: left;
+    }
+}
+
+.about-heading {
+    font-size: $fs-2xl;
+    font-weight: $fw-bold;
+    margin-bottom: $spacing-6;
+
+    @include md {
+        font-size: $fs-3xl;
+    }
+}
+
+.about-text {
+    font-size: $fs-base;
+    line-height: 1.8;
+    margin-bottom: $spacing-4;
+
+    [data-theme="dark"] & {
+        color: $dark-text-muted;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text-muted;
+    }
+
+    @include md {
+        font-size: $fs-lg;
+    }
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-4;
+    margin: $spacing-8 0;
+
+    @include sm {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: $spacing-3;
+    padding: $spacing-4;
+    border-radius: $radius-lg;
+    text-align: left;
+
+    [data-theme="dark"] & {
+        background: $dark-surface;
+        border: 1px solid $dark-border;
+    }
+
+    [data-theme="light"] & {
+        background: $light-surface;
+        border: 1px solid $light-border;
+    }
+
+    i {
+        font-size: $fs-xl;
+        color: $primary;
+    }
+
+    .detail-label {
+        display: block;
+        font-size: $fs-xs;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        [data-theme="dark"] & {
+            color: $dark-text-muted;
+        }
+
+        [data-theme="light"] & {
+            color: $light-text-muted;
+        }
+    }
+
+    .detail-value {
+        font-size: $fs-sm;
+        font-weight: $fw-medium;
+    }
+}
+
+.about-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+    justify-content: center;
+
+    @include lg {
+        justify-content: flex-start;
+    }
+}
+
+// Skills Section
+// ==============
+
+.skills-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-12;
+
+    @include lg {
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-16;
+    }
+}
+
+.skills-category {
+    font-size: $fs-xl;
+    font-weight: $fw-semibold;
+    margin-bottom: $spacing-6;
+
+    @include md {
+        font-size: $fs-2xl;
+    }
+}
+
+.skill-item {
+    margin-bottom: $spacing-6;
+}
+
+.skill-header {
+    @include flex-between;
+    margin-bottom: $spacing-2;
+}
+
+.skill-name {
+    font-size: $fs-base;
+    font-weight: $fw-medium;
+}
+
+.skill-percent {
+    font-size: $fs-sm;
+    color: $primary;
+    font-weight: $fw-semibold;
+}
+
+.skill-bar {
+    height: 10px;
+    border-radius: $radius-full;
+    overflow: hidden;
+
+    [data-theme="dark"] & {
+        background: $dark-surface;
+    }
+
+    [data-theme="light"] & {
+        background: $light-bg-tertiary;
+    }
+}
+
+.skill-progress {
+    height: 100%;
+    width: 0;
+    background: $gradient-primary;
+    border-radius: $radius-full;
+    transition: width 1.5s ease;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            transparent 100%
+        );
+        animation: shimmer 2s infinite;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-4;
+
+    @include sm {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include md {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $spacing-2;
+    padding: $spacing-6;
+    border-radius: $radius-xl;
+    text-align: center;
+    transition: all $transition-base;
+
+    [data-theme="dark"] & {
+        background: $dark-surface;
+        border: 1px solid $dark-border;
+
+        &:hover {
+            background: rgba($primary, 0.1);
+            border-color: $primary;
+            transform: translateY(-5px);
+
+            .tech-icon {
+                @include glow($primary, 0.3);
+            }
+        }
+    }
+
+    [data-theme="light"] & {
+        background: $light-bg;
+        border: 1px solid $light-border;
+        box-shadow: $shadow-sm;
+
+        &:hover {
+            background: rgba($primary, 0.05);
+            border-color: $primary;
+            transform: translateY(-5px);
+            box-shadow: $shadow-lg;
+        }
+    }
+}
+
+.tech-icon {
+    width: 60px;
+    height: 60px;
+    @include flex-center;
+    font-size: $fs-3xl;
+    color: $primary;
+    border-radius: $radius-lg;
+    transition: all $transition-base;
+
+    [data-theme="dark"] & {
+        background: rgba($primary, 0.1);
+    }
+
+    [data-theme="light"] & {
+        background: rgba($primary, 0.1);
+    }
+}
+
+// Projects Section
+// ================
+
+.projects-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-3;
+    margin-bottom: $spacing-10;
+}
+
+.filter-btn {
+    padding: $spacing-2 $spacing-5;
+    font-size: $fs-sm;
+    font-weight: $fw-medium;
+    border-radius: $radius-full;
+    border: none;
+    cursor: pointer;
+    transition: all $transition-base;
+
+    [data-theme="dark"] & {
+        background: $dark-surface;
+        color: $dark-text-muted;
+        border: 1px solid $dark-border;
+
+        &:hover,
+        &.active {
+            background: $primary;
+            color: $dark-text;
+            border-color: $primary;
+        }
+    }
+
+    [data-theme="light"] & {
+        background: $light-surface;
+        color: $light-text-muted;
+        border: 1px solid $light-border;
+
+        &:hover,
+        &.active {
+            background: $primary;
+            color: $dark-text;
+            border-color: $primary;
+        }
+    }
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-6;
+
+    @include md {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include lg {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.project-card {
+    border-radius: $radius-xl;
+    overflow: hidden;
+    transition: all $transition-base;
+
+    [data-theme="dark"] & {
+        background: $dark-bg-secondary;
+        border: 1px solid $dark-border;
+    }
+
+    [data-theme="light"] & {
+        background: $light-bg;
+        border: 1px solid $light-border;
+        box-shadow: $shadow-md;
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+
+        [data-theme="dark"] & {
+            box-shadow: 0 20px 40px rgba($primary, 0.2);
+        }
+
+        [data-theme="light"] & {
+            box-shadow: $shadow-xl;
+        }
+
+        .project-overlay {
+            opacity: 1;
+        }
+
+        .project-image img {
+            transform: scale(1.1);
+        }
+    }
+
+    &.hidden {
+        display: none;
+    }
+}
+
+.project-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform $transition-slow;
+    }
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    @include flex-center;
+    background: rgba($primary, 0.9);
+    opacity: 0;
+    transition: opacity $transition-base;
+}
+
+.project-links {
+    display: flex;
+    gap: $spacing-4;
+}
+
+.project-link {
+    width: 50px;
+    height: 50px;
+    @include flex-center;
+    background: rgba(255, 255, 255, 0.2);
+    color: $dark-text;
+    border-radius: $radius-full;
+    font-size: $fs-xl;
+    transition: all $transition-base;
+
+    &:hover {
+        background: $dark-text;
+        color: $primary;
+        transform: scale(1.1);
+    }
+}
+
+.project-info {
+    padding: $spacing-6;
+}
+
+.project-title {
+    font-size: $fs-xl;
+    font-weight: $fw-semibold;
+    margin-bottom: $spacing-2;
+}
+
+.project-description {
+    font-size: $fs-sm;
+    line-height: 1.6;
+    margin-bottom: $spacing-4;
+
+    [data-theme="dark"] & {
+        color: $dark-text-muted;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text-muted;
+    }
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-2;
+
+    span {
+        padding: $spacing-1 $spacing-3;
+        font-size: $fs-xs;
+        font-weight: $fw-medium;
+        border-radius: $radius-full;
+
+        [data-theme="dark"] & {
+            background: rgba($primary, 0.1);
+            color: $primary-light;
+        }
+
+        [data-theme="light"] & {
+            background: rgba($primary, 0.1);
+            color: $primary-dark;
+        }
+    }
+}

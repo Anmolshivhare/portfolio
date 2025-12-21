@@ -1,0 +1,322 @@
+// Experience / Timeline Section
+// ==============================
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 20px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+
+        [data-theme="dark"] & {
+            background: $dark-border;
+        }
+
+        [data-theme="light"] & {
+            background: $light-border;
+        }
+
+        @include md {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    padding-bottom: $spacing-10;
+
+    @include md {
+        width: 50%;
+        padding-left: 0;
+        padding-right: $spacing-10;
+
+        &:nth-child(even) {
+            margin-left: 50%;
+            padding-left: $spacing-10;
+            padding-right: 0;
+
+            .timeline-marker {
+                left: -10px;
+                right: auto;
+            }
+        }
+
+        &:nth-child(odd) {
+            .timeline-marker {
+                right: -10px;
+                left: auto;
+            }
+        }
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background: $gradient-primary;
+    border-radius: $radius-full;
+    z-index: 1;
+
+    [data-theme="dark"] & {
+        box-shadow: 0 0 0 4px $dark-bg, 0 0 0 6px $primary;
+    }
+
+    [data-theme="light"] & {
+        box-shadow: 0 0 0 4px $light-bg, 0 0 0 6px $primary;
+    }
+
+    &.education-marker {
+        background: $accent;
+
+        [data-theme="dark"] & {
+            box-shadow: 0 0 0 4px $dark-bg, 0 0 0 6px $accent;
+        }
+
+        [data-theme="light"] & {
+            box-shadow: 0 0 0 4px $light-bg, 0 0 0 6px $accent;
+        }
+    }
+}
+
+.timeline-content {
+    position: relative;
+    padding: $spacing-6;
+    border-radius: $radius-xl;
+
+    [data-theme="dark"] & {
+        background: $dark-bg-secondary;
+        border: 1px solid $dark-border;
+    }
+
+    [data-theme="light"] & {
+        background: $light-bg;
+        border: 1px solid $light-border;
+        box-shadow: $shadow-md;
+    }
+}
+
+.timeline-badge {
+    position: absolute;
+    top: -10px;
+    right: $spacing-4;
+    padding: $spacing-1 $spacing-3;
+    background: $gradient-primary;
+    color: $dark-text;
+    font-size: $fs-xs;
+    font-weight: $fw-semibold;
+    border-radius: $radius-full;
+    text-transform: uppercase;
+}
+
+.timeline-date {
+    display: inline-block;
+    font-size: $fs-sm;
+    font-weight: $fw-medium;
+    color: $primary;
+    margin-bottom: $spacing-2;
+}
+
+.timeline-title {
+    font-size: $fs-xl;
+    font-weight: $fw-semibold;
+    margin-bottom: $spacing-1;
+}
+
+.timeline-company {
+    font-size: $fs-base;
+    margin-bottom: $spacing-4;
+
+    [data-theme="dark"] & {
+        color: $dark-text-muted;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text-muted;
+    }
+}
+
+.timeline-description {
+    font-size: $fs-sm;
+    line-height: 1.8;
+    margin-bottom: $spacing-4;
+    padding-left: $spacing-4;
+
+    [data-theme="dark"] & {
+        color: $dark-text-muted;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text-muted;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: $spacing-2;
+
+        &::before {
+            content: "•";
+            position: absolute;
+            left: -$spacing-4;
+            color: $primary;
+        }
+    }
+}
+
+.timeline-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-2;
+
+    span {
+        padding: $spacing-1 $spacing-3;
+        font-size: $fs-xs;
+        font-weight: $fw-medium;
+        border-radius: $radius-full;
+
+        [data-theme="dark"] & {
+            background: rgba($primary, 0.1);
+            color: $primary-light;
+        }
+
+        [data-theme="light"] & {
+            background: rgba($primary, 0.1);
+            color: $primary-dark;
+        }
+    }
+}
+
+// Services Section
+// ================
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-6;
+
+    @include md {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include lg {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.service-card {
+    padding: $spacing-8;
+    border-radius: $radius-xl;
+    text-align: center;
+    transition: all $transition-base;
+
+    [data-theme="dark"] & {
+        background: $dark-bg-secondary;
+        border: 1px solid $dark-border;
+    }
+
+    [data-theme="light"] & {
+        background: $light-bg;
+        border: 1px solid $light-border;
+        box-shadow: $shadow-md;
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+
+        [data-theme="dark"] & {
+            border-color: $primary;
+            box-shadow: 0 20px 40px rgba($primary, 0.2);
+        }
+
+        [data-theme="light"] & {
+            border-color: $primary;
+            box-shadow: $shadow-xl;
+        }
+
+        .service-icon {
+            background: $gradient-primary;
+            color: $dark-text;
+            transform: rotateY(360deg);
+        }
+    }
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    @include flex-center;
+    margin: 0 auto $spacing-6;
+    font-size: $fs-3xl;
+    border-radius: $radius-xl;
+    transition: all 0.6s ease;
+
+    [data-theme="dark"] & {
+        background: rgba($primary, 0.1);
+        color: $primary;
+    }
+
+    [data-theme="light"] & {
+        background: rgba($primary, 0.1);
+        color: $primary;
+    }
+}
+
+.service-title {
+    font-size: $fs-xl;
+    font-weight: $fw-semibold;
+    margin-bottom: $spacing-3;
+}
+
+.service-description {
+    font-size: $fs-sm;
+    line-height: 1.7;
+    margin-bottom: $spacing-4;
+
+    [data-theme="dark"] & {
+        color: $dark-text-muted;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text-muted;
+    }
+}
+
+.service-features {
+    text-align: left;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: $spacing-2;
+        font-size: $fs-sm;
+        margin-bottom: $spacing-2;
+
+        [data-theme="dark"] & {
+            color: $dark-text-muted;
+        }
+
+        [data-theme="light"] & {
+            color: $light-text-muted;
+        }
+
+        i {
+            color: $accent;
+            font-size: $fs-base;
+        }
+    }
+}

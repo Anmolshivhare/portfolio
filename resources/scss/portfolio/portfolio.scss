@@ -1,0 +1,60 @@
+// Portfolio Main SCSS
+// ====================
+
+// Import Variables & Mixins
+@import "variables";
+@import "mixins";
+
+// Import Bootstrap (local)
+@import "bootstrap/scss/bootstrap";
+
+// Import Bootstrap Icons
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+// Import AOS
+@import "aos/dist/aos.css";
+
+// Base styles
+@import "base";
+
+// Components
+@import "header";
+@import "hero";
+@import "sections";
+@import "timeline";
+@import "contact";
+
+// Utility classes
+.text-primary {
+    color: $primary !important;
+}
+
+.bg-primary {
+    background: $gradient-primary !important;
+}
+
+// Smooth transitions for theme change
+* {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+// AOS Custom Animations
+[data-aos="fade-up"] {
+    transform: translateY(30px);
+}
+
+[data-aos="fade-down"] {
+    transform: translateY(-30px);
+}
+
+[data-aos="fade-left"] {
+    transform: translateX(30px);
+}
+
+[data-aos="fade-right"] {
+    transform: translateX(-30px);
+}
+
+[data-aos="zoom-in"] {
+    transform: scale(0.9);
+}

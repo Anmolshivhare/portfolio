@@ -1,0 +1,446 @@
+// Hero Section
+// =============
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.gradient-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+    animation: float 20s ease-in-out infinite;
+
+    [data-theme="light"] & {
+        opacity: 0.3;
+    }
+}
+
+.blob-1 {
+    width: 600px;
+    height: 600px;
+    background: $primary;
+    top: -200px;
+    right: -100px;
+    animation-delay: 0s;
+}
+
+.blob-2 {
+    width: 400px;
+    height: 400px;
+    background: $secondary;
+    bottom: -100px;
+    left: -100px;
+    animation-delay: -7s;
+}
+
+.blob-3 {
+    width: 300px;
+    height: 300px;
+    background: $accent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: -14s;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(50px, -50px) scale(1.1);
+    }
+    50% {
+        transform: translate(-30px, 30px) scale(0.9);
+    }
+    75% {
+        transform: translate(30px, 50px) scale(1.05);
+    }
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-10;
+    align-items: center;
+
+    @include lg {
+        grid-template-columns: 1fr 1fr;
+        gap: $spacing-16;
+    }
+}
+
+.hero-content {
+    text-align: center;
+
+    @include lg {
+        text-align: left;
+    }
+}
+
+.hero-greeting {
+    font-size: $fs-lg;
+    font-weight: $fw-medium;
+    color: $primary;
+    margin-bottom: $spacing-2;
+
+    @include md {
+        font-size: $fs-xl;
+    }
+}
+
+.hero-name {
+    font-size: $fs-4xl;
+    font-weight: $fw-extrabold;
+    line-height: 1.1;
+    margin-bottom: $spacing-4;
+
+    @include md {
+        font-size: $fs-5xl;
+    }
+
+    @include lg {
+        font-size: $fs-6xl;
+    }
+
+    @include xl {
+        font-size: $fs-7xl;
+    }
+
+    .name-letter {
+        display: inline-block;
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    .name-space {
+        display: inline-block;
+        width: 0.3em;
+    }
+}
+
+.hero-role {
+    font-size: $fs-xl;
+    margin-bottom: $spacing-6;
+
+    @include md {
+        font-size: $fs-2xl;
+    }
+
+    .role-prefix {
+        [data-theme="dark"] & {
+            color: $dark-text-muted;
+        }
+
+        [data-theme="light"] & {
+            color: $light-text-muted;
+        }
+    }
+
+    .role-text {
+        @include gradient-text;
+        font-weight: $fw-semibold;
+    }
+
+    .role-cursor {
+        color: $primary;
+        animation: blink 0.8s infinite;
+    }
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.hero-description {
+    font-size: $fs-base;
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto $spacing-8;
+
+    [data-theme="dark"] & {
+        color: $dark-text-muted;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text-muted;
+    }
+
+    @include md {
+        font-size: $fs-lg;
+    }
+
+    @include lg {
+        margin: 0 0 $spacing-8 0;
+    }
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+    justify-content: center;
+    margin-bottom: $spacing-8;
+
+    @include lg {
+        justify-content: flex-start;
+    }
+}
+
+.hero-social {
+    display: flex;
+    gap: $spacing-4;
+    justify-content: center;
+
+    @include lg {
+        justify-content: flex-start;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        @include flex-center;
+        border-radius: $radius-full;
+        font-size: $fs-lg;
+        transition: all $transition-base;
+
+        [data-theme="dark"] & {
+            background: $dark-surface;
+            color: $dark-text-muted;
+            border: 1px solid $dark-border;
+
+            &:hover {
+                background: $primary;
+                color: $dark-text;
+                border-color: $primary;
+                transform: translateY(-3px);
+            }
+        }
+
+        [data-theme="light"] & {
+            background: $light-surface;
+            color: $light-text-muted;
+            border: 1px solid $light-border;
+
+            &:hover {
+                background: $primary;
+                color: $dark-text;
+                border-color: $primary;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include lg {
+        justify-content: flex-end;
+    }
+}
+
+.image-wrapper {
+    position: relative;
+    width: 280px;
+    height: 280px;
+
+    @include md {
+        width: 350px;
+        height: 350px;
+    }
+
+    @include lg {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: $radius-full;
+    position: relative;
+    z-index: 2;
+}
+
+.image-glow {
+    position: absolute;
+    inset: -10px;
+    background: $gradient-primary;
+    border-radius: $radius-full;
+    filter: blur(30px);
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.image-ring {
+    position: absolute;
+    inset: -15px;
+    border: 3px dashed $primary;
+    border-radius: $radius-full;
+    animation: rotate 20s linear infinite;
+    z-index: 3;
+    opacity: 0.5;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.floating-cards {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+}
+
+.float-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: $spacing-2;
+    padding: $spacing-3 $spacing-4;
+    border-radius: $radius-lg;
+    font-size: $fs-sm;
+    font-weight: $fw-medium;
+    animation: bounce 3s ease-in-out infinite;
+
+    @include glassmorphism(10px, 0.15);
+
+    [data-theme="dark"] & {
+        background: rgba($dark-bg-secondary, 0.9);
+        border-color: $dark-border;
+    }
+
+    [data-theme="light"] & {
+        background: rgba($light-bg, 0.9);
+        border-color: $light-border;
+        box-shadow: $shadow-md;
+    }
+
+    i {
+        color: $primary;
+        font-size: $fs-lg;
+    }
+}
+
+.card-1 {
+    top: 20%;
+    left: -30px;
+    animation-delay: 0s;
+
+    @include md {
+        left: -50px;
+    }
+}
+
+.card-2 {
+    bottom: 20%;
+    right: -30px;
+    animation-delay: -1.5s;
+
+    @include md {
+        right: -50px;
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: $spacing-8;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $spacing-2;
+
+        [data-theme="dark"] & {
+            color: $dark-text-muted;
+        }
+
+        [data-theme="light"] & {
+            color: $light-text-muted;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    span {
+        font-size: $fs-xs;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+.mouse {
+    width: 26px;
+    height: 40px;
+    border: 2px solid currentColor;
+    border-radius: 20px;
+    position: relative;
+}
+
+.wheel {
+    width: 4px;
+    height: 8px;
+    background: currentColor;
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.5s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(15px);
+    }
+}
