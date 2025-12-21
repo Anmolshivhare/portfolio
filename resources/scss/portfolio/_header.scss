@@ -1,0 +1,195 @@
+// Header & Navigation
+// ====================
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: $z-sticky;
+    transition: all $transition-base;
+
+    &.scrolled {
+        @include glassmorphism(20px, 0.1);
+
+        [data-theme="dark"] & {
+            background: rgba($dark-bg, 0.9);
+        }
+
+        [data-theme="light"] & {
+            background: rgba($light-bg, 0.9);
+            box-shadow: $shadow-md;
+        }
+    }
+}
+
+.nav {
+    @include flex-between;
+    height: 80px;
+
+    @include lg {
+        height: 90px;
+    }
+}
+
+.nav-logo {
+    font-size: $fs-2xl;
+    font-weight: $fw-bold;
+
+    .logo-text {
+        @include gradient-text;
+    }
+
+    .logo-dot {
+        color: $accent;
+    }
+
+    &:hover {
+        color: inherit;
+
+        .logo-text {
+            @include gradient-text($gradient-accent);
+        }
+    }
+}
+
+.nav-menu {
+    @include lg {
+        display: flex;
+        align-items: center;
+    }
+
+    // Mobile menu
+    @media (max-width: #{$breakpoint-lg - 1}) {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        padding: $spacing-16 $spacing-6;
+        transition: right $transition-base;
+        z-index: $z-modal;
+
+        [data-theme="dark"] & {
+            background: $dark-bg-secondary;
+        }
+
+        [data-theme="light"] & {
+            background: $light-bg;
+            box-shadow: $shadow-xl;
+        }
+
+        &.show {
+            right: 0;
+        }
+    }
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+
+    @include lg {
+        flex-direction: row;
+        gap: $spacing-8;
+    }
+}
+
+.nav-link {
+    position: relative;
+    font-size: $fs-lg;
+    font-weight: $fw-medium;
+    padding: $spacing-2 0;
+    transition: color $transition-fast;
+
+    [data-theme="dark"] & {
+        color: $dark-text-muted;
+
+        &:hover,
+        &.active {
+            color: $dark-text;
+        }
+    }
+
+    [data-theme="light"] & {
+        color: $light-text-muted;
+
+        &:hover,
+        &.active {
+            color: $light-text;
+        }
+    }
+
+    @include lg {
+        font-size: $fs-base;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $gradient-primary;
+            transition: width $transition-base;
+        }
+
+        &:hover::after,
+        &.active::after {
+            width: 100%;
+        }
+    }
+}
+
+.nav-close {
+    position: absolute;
+    top: $spacing-6;
+    right: $spacing-6;
+    font-size: $fs-2xl;
+    cursor: pointer;
+    transition: color $transition-fast;
+
+    &:hover {
+        color: $primary;
+    }
+
+    @include lg {
+        display: none;
+    }
+}
+
+.nav-toggle {
+    font-size: $fs-2xl;
+    cursor: pointer;
+    transition: color $transition-fast;
+
+    &:hover {
+        color: $primary;
+    }
+
+    @include lg {
+        display: none;
+    }
+}
+
+// Mobile menu overlay
+.nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all $transition-base;
+    z-index: $z-modal-backdrop;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @include lg {
+        display: none;
+    }
+}

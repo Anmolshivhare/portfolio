@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
-import laravel from 'laravel-vite-plugin';
+import { defineConfig } from "vite";
+import laravel from "laravel-vite-plugin";
 
 export default defineConfig({
     plugins: [
@@ -7,13 +7,15 @@ export default defineConfig({
             input: [
                 "resources/scss/front/front.scss",
                 "resources/js/front/front.js",
+                "resources/scss/portfolio/portfolio.scss",
+                "resources/js/portfolio/portfolio.js",
             ],
             refresh: true,
         }),
     ],
     resolve: {
         alias: {
-            vue: 'vue/dist/vue.esm-bundler.js',
+            vue: "vue/dist/vue.esm-bundler.js",
         },
     },
     build: {
