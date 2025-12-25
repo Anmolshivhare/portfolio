@@ -9,7 +9,7 @@
             <div class="gradient-blob blob-3"></div>
         </div>
 
-        <div class="hero-container container">
+        <div class="hero-container container py-5 py-lg-0">
             <div class="hero-content">
                 <p class="hero-greeting" data-aos="fade-down" data-aos-delay="100">Hello, I'm</p>
                 <h1 class="hero-name" id="heroName">
@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="700">
+        <div class="scroll-indicator d-none d-lg-block" data-aos="fade-up" data-aos-delay="700">
             <a href="#about">
                 <div class="mouse">
                     <div class="wheel"></div>

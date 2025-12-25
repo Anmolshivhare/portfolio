@@ -74,13 +74,23 @@
         right: -100%;
         width: 80%;
         max-width: 300px;
-        height: 100vh;
+        height: auto;
         padding: $spacing-16 $spacing-6;
         transition: right $transition-base;
         z-index: $z-modal;
 
         [data-theme="dark"] & {
             background: $dark-bg-secondary;
+
+            // Ensure text is visible in mobile menu
+            .nav-link {
+                color: $primary !important;
+
+                &:hover,
+                &.active {
+                    color: $primary !important;
+                }
+            }
         }
 
         [data-theme="light"] & {
@@ -158,6 +168,14 @@
     font-size: $fs-2xl;
     cursor: pointer;
     transition: color $transition-fast;
+
+    [data-theme="dark"] & {
+        color: $dark-text;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text;
+    }
 
     &:hover {
         color: $primary;

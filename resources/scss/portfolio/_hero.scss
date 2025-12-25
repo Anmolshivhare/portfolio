@@ -320,6 +320,11 @@
     position: absolute;
     inset: 0;
     z-index: 4;
+
+    // Hide on very small screens to prevent overflow
+    @media (max-width: 374px) {
+        display: none;
+    }
 }
 
 .float-card {
@@ -354,21 +359,29 @@
 
 .card-1 {
     top: 20%;
-    left: -30px;
+    left: -10px;
     animation-delay: 0s;
 
     @include md {
-        left: -50px;
+        left: -40px;
+    }
+
+    @include lg {
+        left: -60px;
     }
 }
 
 .card-2 {
     bottom: 20%;
-    right: -30px;
+    right: -10px;
     animation-delay: -1.5s;
 
     @include md {
-        right: -50px;
+        right: -40px;
+    }
+
+    @include lg {
+        right: -60px;
     }
 }
 
@@ -384,10 +397,16 @@
 
 .scroll-indicator {
     position: absolute;
-    bottom: $spacing-8;
+    bottom: $spacing-4;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
+    z-index: 10;
+
+    // Better positioning for mobile
+    @media (max-width: 767px) {
+        bottom: $spacing-2;
+    }
 
     a {
         display: flex;
@@ -412,6 +431,11 @@
         font-size: $fs-xs;
         text-transform: uppercase;
         letter-spacing: 2px;
+
+        // Hide text on very small screens
+        @media (max-width: 374px) {
+            display: none;
+        }
     }
 }
 

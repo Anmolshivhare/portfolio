@@ -26,6 +26,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 // Dark theme (default)
@@ -209,24 +211,28 @@ select {
     border-color: currentColor;
 
     [data-theme="dark"] & {
-        color: $light-bg;
-        border-color: $dark-border;
+        color: $dark-text;
+        border-color: rgba(0, 128, 214, 0.596);
 
         &:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(36, 136, 230, 0);
             border-color: $primary;
             color: $primary;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba($primary, 0.3);
         }
     }
 
     [data-theme="light"] & {
         color: $light-text;
-        border-color: $light-border;
+        border-color: rgba(0, 0, 0, 0.2);
 
         &:hover {
             background: rgba(0, 0, 0, 0.05);
             border-color: $primary;
             color: $primary;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba($primary, 0.2);
         }
     }
 }

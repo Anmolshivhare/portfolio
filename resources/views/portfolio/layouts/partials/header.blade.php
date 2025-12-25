@@ -4,7 +4,7 @@
             <span class="logo-text">Sumit</span><span class="logo-dot">.</span>
         </a>
 
-        <div class="nav-menu" id="navMenu">
+        <div class="nav-menu h-0" id="navMenu">
             <ul class="nav-list gap-5">
                 <li class="nav-item">
                     <a href="#home" class="nav-link active">Home</a>
@@ -30,12 +30,12 @@
             </ul>
 
             <div class="nav-close" id="navClose">
-                <i class="bi bi-x-lg"></i>
+                <i class="bi bi-x-lg text-primary"></i>
             </div>
         </div>
 
         <div class="nav-toggle" id="navToggle">
-            <i class="bi bi-list"></i>
+            <i class="bi bi-list text-primary"></i>
         </div>
     </nav>
 </header>
