@@ -15,7 +15,6 @@
                 <h1 class="hero-name" id="heroName">
                     <span class="name-letter">S</span><span class="name-letter">u</span><span
                         class="name-letter">m</span><span class="name-letter">i</span><span class="name-letter">t</span>
-                    <span class="name-space"></span>
                     <span class="name-letter">S</span><span class="name-letter">h</span><span
                         class="name-letter">i</span><span class="name-letter">v</span><span
                         class="name-letter">h</span><span class="name-letter">a</span><span
@@ -39,10 +38,11 @@
                     </a>
                 </div>
                 <div class="hero-social" data-aos="fade-up" data-aos-delay="600">
-                    <a href="https://github.com/sumitshivhare" target="_blank" rel="noopener" class="social-icon">
+                    <a href="https://github.com/Anmolshivhare" target="_blank" rel="noopener" class="social-icon">
                         <i class="bi bi-github"></i>
                     </a>
-                    <a href="https://linkedin.com/in/sumitshivhare" target="_blank" rel="noopener" class="social-icon">
+                    <a href="https://www.linkedin.com/in/sumit-shivhare-a163a921a/" target="_blank" rel="noopener"
+                        class="social-icon">
                         <i class="bi bi-linkedin"></i>
                     </a>
                     <a href="mailto:s.shivhare985@gmail.com" class="social-icon">
@@ -86,7 +86,7 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Get to know me</span>
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title text-white">About Me</h2>
             </div>
 
             <div class="about-content">
@@ -148,7 +148,8 @@
                         <a href="#contact" class="btn btn-primary">
                             <i class="bi bi-chat-dots-fill"></i> Let's Talk
                         </a>
-                        <a href="{{ asset('resume.pdf') }}" download class="btn btn-outline">
+                        <a href="{{ asset('files/resume.pdf') }}" download="Sumit_Shivhare_Resume.pdf"
+                            class="btn btn-outline">
                             <i class="bi bi-download"></i> Download CV
                         </a>
                     </div>
@@ -162,16 +163,16 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">My abilities</span>
-                <h2 class="section-title">Skills & Technologies</h2>
+                <h2 class="section-heading">Skills & Technologies</h2>
             </div>
 
             <div class="skills-content">
                 <div class="skills-bars" data-aos="fade-right">
-                    <h3 class="skills-category">Technical Skills</h3>
+                    <h3 class="section-category">Technical Skills</h3>
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span class="skill-name">Laravel / PHP</span>
+                            <span class="hero-greeting">Laravel / PHP</span>
                             <span class="skill-percent">90%</span>
                         </div>
                         <div class="skill-bar">
@@ -181,27 +182,27 @@
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span class="skill-name">MySQL / Database</span>
-                            <span class="skill-percent">85%</span>
+                            <span class="hero-greeting">MySQL / Database</span>
+                            <span class="skill-percent">65%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85"></div>
+                            <div class="skill-progress" data-progress="65"></div>
                         </div>
                     </div>
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span class="skill-name">JavaScript / jQuery</span>
-                            <span class="skill-percent">80%</span>
+                            <span class="hero-greeting">JavaScript / jQuery</span>
+                            <span class="skill-percent">55%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
+                            <div class="skill-progress" data-progress="55"></div>
                         </div>
                     </div>
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span class="skill-name">HTML / CSS / Bootstrap</span>
+                            <span class="hero-greeting">HTML / CSS / Bootstrap</span>
                             <span class="skill-percent">95%</span>
                         </div>
                         <div class="skill-bar">
@@ -211,7 +212,7 @@
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span class="skill-name">Livewire</span>
+                            <span class="hero-greeting">Livewire</span>
                             <span class="skill-percent">75%</span>
                         </div>
                         <div class="skill-bar">
@@ -221,7 +222,7 @@
 
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span class="skill-name">Git / GitHub</span>
+                            <span class="hero-greeting">Git / GitHub</span>
                             <span class="skill-percent">85%</span>
                         </div>
                         <div class="skill-bar">
@@ -231,39 +232,39 @@
                 </div>
 
                 <div class="skills-icons" data-aos="fade-left">
-                    <h3 class="skills-category">Technologies I Work With</h3>
+                    <h3 class="section-category">Technologies I Work With</h3>
                     <div class="tech-grid">
                         <div class="tech-item" data-aos="zoom-in" data-aos-delay="100">
                             <div class="tech-icon"><i class="bi bi-filetype-php"></i></div>
-                            <span>PHP</span>
+                            <span class="hero-greeting">PHP</span>
                         </div>
                         <div class="tech-item" data-aos="zoom-in" data-aos-delay="150">
                             <div class="tech-icon"><i class="bi bi-box"></i></div>
-                            <span>Laravel</span>
+                            <span class="hero-greeting">Laravel</span>
                         </div>
                         <div class="tech-item" data-aos="zoom-in" data-aos-delay="200">
                             <div class="tech-icon"><i class="bi bi-database"></i></div>
-                            <span>MySQL</span>
+                            <span class="hero-greeting">MySQL</span>
                         </div>
                         <div class="tech-item" data-aos="zoom-in" data-aos-delay="250">
                             <div class="tech-icon"><i class="bi bi-filetype-js"></i></div>
-                            <span>JavaScript</span>
+                            <span class="hero-greeting">JavaScript</span>
                         </div>
                         <div class="tech-item" data-aos="zoom-in" data-aos-delay="300">
                             <div class="tech-icon"><i class="bi bi-bootstrap"></i></div>
-                            <span>Bootstrap</span>
+                            <span class="hero-greeting">Bootstrap</span>
                         </div>
                         <div class="tech-item" data-aos="zoom-in" data-aos-delay="350">
                             <div class="tech-icon"><i class="bi bi-filetype-css"></i></div>
-                            <span>CSS/SCSS</span>
+                            <span class="hero-greeting">CSS/SCSS</span>
                         </div>
                         <div class="tech-item" data-aos="zoom-in" data-aos-delay="400">
                             <div class="tech-icon"><i class="bi bi-git"></i></div>
-                            <span>Git</span>
+                            <span class="hero-greeting">Git</span>
                         </div>
                         <div class="tech-item" data-aos="zoom-in" data-aos-delay="450">
                             <div class="tech-icon"><i class="bi bi-code-square"></i></div>
-                            <span>Ajax</span>
+                            <span class="hero-greeting">Ajax</span>
                         </div>
                     </div>
                 </div>
@@ -293,78 +294,26 @@
                         <img src="{{ Vite::asset('resources/images/portfolio/project1.jpg') }}" alt="Client Demos App">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://clientdemos.app" target="_blank" rel="noopener" class="project-link">
+                                <a href="https://primostravellers.com" target="_blank" rel="noopener" class="project-link">
                                     <i class="bi bi-link-45deg"></i>
                                 </a>
-                                <a href="https://github.com" target="_blank" rel="noopener" class="project-link">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Client Demos App</h3>
-                        <p class="project-description">A comprehensive client management and demo platform built with
-                            Laravel.</p>
-                        <div class="project-tech">
-                            <span>Laravel</span>
-                            <span>MySQL</span>
-                            <span>Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" data-category="fullstack" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="{{ Vite::asset('resources/images/portfolio/project2.jpg') }}" alt="Vallela CRM">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://vallela.clientdemos.app" target="_blank" rel="noopener"
+                                <a href="https://github.com/Anmolshivhare" target="_blank" rel="noopener"
                                     class="project-link">
-                                    <i class="bi bi-link-45deg"></i>
-                                </a>
-                                <a href="https://github.com" target="_blank" rel="noopener" class="project-link">
                                     <i class="bi bi-github"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Vallela CRM System</h3>
-                        <p class="project-description">Full-featured CRM with customer management, reporting, and analytics.
+                        <h3 class="project-title">Primos Travellers</h3>
+                        <p class="project-description"> A comprehensive travel management and customer engagement platform
+                            developed using Laravel.
                         </p>
                         <div class="project-tech">
                             <span>Laravel</span>
-                            <span>Livewire</span>
                             <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" data-category="laravel" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="{{ Vite::asset('resources/images/portfolio/project3.jpg') }}" alt="HRMS Application">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://hrms.clientdemos.app" target="_blank" rel="noopener" class="project-link">
-                                    <i class="bi bi-link-45deg"></i>
-                                </a>
-                                <a href="https://github.com" target="_blank" rel="noopener" class="project-link">
-                                    <i class="bi bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">HRMS Application</h3>
-                        <p class="project-description">Human Resource Management System with attendance, payroll, and
-                            employee management.</p>
-                        <div class="project-tech">
-                            <span>Laravel</span>
-                            <span>jQuery</span>
                             <span>Bootstrap</span>
+                            <span>jQuery</span>
                         </div>
                     </div>
                 </div>
@@ -458,7 +407,7 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">My journey</span>
-                <h2 class="section-title">Work Experience</h2>
+                <h2 class="section-heading">Work Experience</h2>
             </div>
 
             <div class="timeline">
@@ -625,19 +574,19 @@
         <div class="container">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-subtitle">Get in touch</span>
-                <h2 class="section-title">Contact Me</h2>
+                <h2 class="section-title text-dark">Contact Me</h2>
             </div>
 
             <div class="contact-content">
                 <div class="contact-info" data-aos="fade-right">
-                    <h3 class="contact-heading">Let's work together</h3>
+                    <h3 class="contact-heading text-dark">Let's work together</h3>
                     <p class="contact-text">
                         Have a project in mind or want to discuss opportunities? I'm always open to new ideas and
                         collaborations.
                     </p>
 
                     <div class="contact-cards">
-                        <div class="contact-card">
+                        <div class="contact-card card-padding">
                             <div class="contact-icon">
                                 <i class="bi bi-envelope-fill"></i>
                             </div>
@@ -647,7 +596,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-card">
+                        <div class="contact-card card-padding">
                             <div class="contact-icon">
                                 <i class="bi bi-telephone-fill"></i>
                             </div>
@@ -657,7 +606,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-card">
+                        <div class="contact-card card-padding">
                             <div class="contact-icon">
                                 <i class="bi bi-whatsapp"></i>
                             </div>
@@ -667,7 +616,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-card">
+                        <div class="contact-card card-padding">
                             <div class="contact-icon">
                                 <i class="bi bi-geo-alt-fill"></i>
                             </div>
@@ -683,34 +632,34 @@
                     <form id="contactForm" class="contact-form">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="form-group">
-                            <label for="name">Your Name</label>
+                            <label for="name " class="text-white">Your Name</label>
                             <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
                             <span class="error-message" id="nameError"></span>
                         </div>
 
                         <div class="form-group">
-                            <label for="email">Your Email</label>
+                            <label for="email " class="text-white">Your Email</label>
                             <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com"
                                 required>
                             <span class="error-message" id="emailError"></span>
                         </div>
 
                         <div class="form-group">
-                            <label for="subject">Subject</label>
+                            <label for="subject" class="text-white">Subject</label>
                             <input type="text" id="subject" name="subject" class="form-control"
                                 placeholder="Project Inquiry" required>
                             <span class="error-message" id="subjectError"></span>
                         </div>
 
                         <div class="form-group">
-                            <label for="message">Your Message</label>
+                            <label for="message" class="text-white">Your Message</label>
                             <textarea id="message" name="message" class="form-control" rows="5"
                                 placeholder="Tell me about your project..." required></textarea>
                             <span class="error-message" id="messageError"></span>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-submit">
-                            <span class="btn-text">Send Message</span>
+                            <span class="btn-text text-white">Send Message</span>
                             <span class="btn-loading"><i class="bi bi-arrow-repeat"></i></span>
                             <i class="bi bi-send-fill"></i>
                         </button>

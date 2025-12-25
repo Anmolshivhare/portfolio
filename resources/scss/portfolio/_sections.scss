@@ -78,6 +78,14 @@
     font-weight: $fw-bold;
     margin-bottom: $spacing-6;
 
+    [data-theme="dark"] & {
+        color: #ffffff;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text;
+    }
+
     @include md {
         font-size: $fs-3xl;
     }
@@ -186,6 +194,14 @@
     font-weight: $fw-semibold;
     margin-bottom: $spacing-6;
 
+    [data-theme="dark"] & {
+        color: #ffffff;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text;
+    }
+
     @include md {
         font-size: $fs-2xl;
     }
@@ -203,6 +219,14 @@
 .skill-name {
     font-size: $fs-base;
     font-weight: $fw-medium;
+
+    [data-theme="dark"] & {
+        color: #ffffff;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text;
+    }
 }
 
 .skill-percent {
@@ -484,6 +508,14 @@
     font-size: $fs-xl;
     font-weight: $fw-semibold;
     margin-bottom: $spacing-2;
+
+    [data-theme="dark"] & {
+        color: #ffffff;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text;
+    }
 }
 
 .project-description {

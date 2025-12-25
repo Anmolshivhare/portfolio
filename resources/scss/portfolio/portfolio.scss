@@ -58,3 +58,21 @@
 [data-aos="zoom-in"] {
     transform: scale(0.9);
 }
+
+.detail-value {
+    color: $light-bg !important;
+}
+
+.section-heading {
+    color: $dark-bg;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.skill-name {
+    color: black !important;
+}
+
+.card-padding {
+    padding: 0.8rem;
+}

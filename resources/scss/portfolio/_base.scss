@@ -151,6 +151,14 @@ select {
     font-size: $fs-3xl;
     font-weight: $fw-bold;
 
+    [data-theme="dark"] & {
+        color: #ffffff;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text;
+    }
+
     @include md {
         font-size: $fs-4xl;
     }
@@ -201,7 +209,7 @@ select {
     border-color: currentColor;
 
     [data-theme="dark"] & {
-        color: $dark-text;
+        color: $light-bg;
         border-color: $dark-border;
 
         &:hover {

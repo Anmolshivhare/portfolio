@@ -136,6 +136,14 @@
     font-size: $fs-xl;
     font-weight: $fw-semibold;
     margin-bottom: $spacing-1;
+
+    [data-theme="dark"] & {
+        color: #ffffff;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text;
+    }
 }
 
 .timeline-company {
@@ -280,6 +288,14 @@
     font-size: $fs-xl;
     font-weight: $fw-semibold;
     margin-bottom: $spacing-3;
+
+    [data-theme="dark"] & {
+        color: #ffffff;
+    }
+
+    [data-theme="light"] & {
+        color: $light-text;
+    }
 }
 
 .service-description {
