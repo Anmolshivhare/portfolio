@@ -149,7 +149,7 @@
                             <i class="bi bi-chat-dots-fill"></i> Let's Talk
                         </a>
                         <a href="{{ asset('files/resume.pdf') }}" download="Sumit_Shivhare_Resume.pdf"
-                            class="btn btn-outline">
+                            class="btn btn-outline text-primary">
                             <i class="bi bi-download"></i> Download CV
                         </a>
                     </div>
