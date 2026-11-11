@@ -324,7 +324,7 @@
                         <img src="{{ Vite::asset('resources/images/portfolio/project4.jpg') }}" alt="Company Website">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                <a href="https://tanishqtours.com/" target="_blank" rel="noopener" class="project-link">
                                     <i class="bi bi-link-45deg"></i>
                                 </a>
                                 <a href="https://github.com" target="_blank" rel="noopener" class="project-link">
@@ -334,8 +334,8 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Company Portfolio</h3>
-                        <p class="project-description">Modern responsive company website with animations and contact forms.
+                        <h3 class="project-title">Tanishq Tours</h3>
+                        <p class="project-description"> A comprehensive travel management and customer engagement platform developed using Laravel.
                         </p>
                         <div class="project-tech">
                             <span>HTML</span>
