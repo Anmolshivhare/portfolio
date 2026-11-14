@@ -115,4 +115,15 @@ return [
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Portfolio Contact Admin Email
+    |--------------------------------------------------------------------------
+    |
+    | Destination email for incoming portfolio contact inquiries.
+    |
+    */
+
+    'admin_email' => env('CONTACT_ADMIN_EMAIL', 's.shivare985@gmail.com'),
+
 ];
